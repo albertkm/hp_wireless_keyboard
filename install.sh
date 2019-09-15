@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gcc -o kbdusb kbdusb.c &&\
+gcc -std=gnu99 -o kbdusb kbdusb.c &&\
 sudo cp kbdusb /usr/local/bin/. &&\
 sudo cp hp_keyboard.sh /usr/local/bin/. &&\
 sudo cp hp_keyboard.service /etc/systemd/system/. &&\
